@@ -6,12 +6,6 @@ SkillHeat is a live tech intelligence platform that maps breaking technology new
 
 Built by **Krish Kumar Pal**
 
-![Status](https://img.shields.io/badge/status-Live%20MVP-2563eb)
-![Backend](https://img.shields.io/badge/backend-FastAPI-009688)
-![Frontend](https://img.shields.io/badge/frontend-Next.js-black)
-![Database](https://img.shields.io/badge/database-PostgreSQL-336791)
-![3D](https://img.shields.io/badge/3D-three.js-orange)
-
 ---
 
 # 🚀 Features
