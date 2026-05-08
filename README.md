@@ -1,55 +1,124 @@
-# SkillHeat
+# SkillHeat 🌍⚡
 
-A real-time tech news dashboard with a 3D interactive globe. Click any country to see what's happening in tech there, with live news from 100+ sources updating every minute.
+**Track the global pulse of technology — in real time.**
 
-Developer - Krish Kumar Pal
+SkillHeat is a live tech intelligence platform that maps breaking technology news onto an interactive 3D globe. Explore what’s trending across countries, monitor regional innovation hotspots, and watch the global tech ecosystem evolve minute by minute.
 
-![Status](https://img.shields.io/badge/status-MVP-blue) ![Backend](https://img.shields.io/badge/backend-FastAPI-009688) ![Frontend](https://img.shields.io/badge/frontend-Next.js-black)
+Built by **Krish Kumar Pal**
 
----
-
-## What it does
-
-- Aggregates real-time tech news from major publications worldwide
-- Renders an interactive 3D globe with heat indicators per country
-- Click a country to filter news to that region
-- Live-polling news feed with breaking-news ticker
-- Dark command-center aesthetic
+![Status](https://img.shields.io/badge/status-Live%20MVP-2563eb)
+![Backend](https://img.shields.io/badge/backend-FastAPI-009688)
+![Frontend](https://img.shields.io/badge/frontend-Next.js-black)
+![Database](https://img.shields.io/badge/database-PostgreSQL-336791)
+![3D](https://img.shields.io/badge/3D-three.js-orange)
 
 ---
 
-## Tech stack
+# 🚀 Features
 
-**Backend** — Python, FastAPI, PostgreSQL, SQLAlchemy
-**Frontend** — Next.js, TypeScript, react-globe.gl, three.js, SWR
-**Infra** — Docker Compose for local Postgres
+## 🌐 Interactive 3D Tech Globe
+
+- Rotate, zoom, and explore the world in real time
+- Heat indicators visualize global tech activity
+- Click any country to instantly filter regional news
+
+## 📰 Real-Time News Aggregation
+
+- Pulls live updates from 100+ tech sources worldwide
+- Auto-refreshing feed with breaking-news ticker
+- Tracks emerging trends across regions
+
+## ⚡ Live Intelligence Dashboard
+
+- Country-wise tech momentum visualization
+- Fast, responsive UI with smooth animations
+- Dark command-center inspired design
+
+## 🔄 Continuous Updates
+
+- Background polling system refreshes news every minute
+- Dynamic feed updates without page reloads
 
 ---
 
-## Getting started
+# 🧠 Why SkillHeat?
 
-### Prerequisites
+Most news platforms show headlines.
+
+SkillHeat shows **where innovation is happening**.
+
+Instead of scrolling endless feeds, you can visually explore:
+
+- Which countries are dominating AI discussions
+- Where startup ecosystems are heating up
+- Which regions are driving cybersecurity, robotics, chip manufacturing, or climate-tech conversations
+
+It turns global tech news into a spatial, real-time experience.
+
+---
+
+# 🛠 Tech Stack
+
+## Backend
+
+- Python
+- FastAPI
+- PostgreSQL
+- SQLAlchemy
+
+## Frontend
+
+- Next.js
+- TypeScript
+- three.js
+- react-globe.gl
+- SWR
+
+## Infrastructure
+
+- Docker Compose
+- Local PostgreSQL containerized setup
+
+---
+
+# ⚙️ Getting Started
+
+## Prerequisites
 
 - Docker Desktop
-- Python 3.12 (recommended via [python.org installer](https://www.python.org/downloads/macos/))
+- Python 3.12+
 - Node.js 18+
 - Git
 
-### Setup
+---
+
+# 1️⃣ Clone the Repository
 
 ```bash
 git clone https://github.com/KrishKPal/skillheat.git
 cd skillheat
+```
+
+---
+
+# 2️⃣ Start PostgreSQL
+
+```bash
 docker compose up -d
 ```
 
-**Backend:**
+---
+
+# 3️⃣ Backend Setup
 
 ```bash
 cd backend
+
 python3.12 -m venv venv
 source venv/bin/activate
+
 pip install -r requirements.txt
+
 cp .env.example .env
 
 python3 -m app.scripts.init_db
@@ -60,42 +129,98 @@ python3 -m app.scripts.fetch_news
 uvicorn app.main:app --reload --port 8000
 ```
 
-**Frontend** (new terminal):
+Backend runs on:
+
+```bash
+http://localhost:8000
+```
+
+---
+
+# 4️⃣ Frontend Setup
+
+Open a new terminal:
 
 ```bash
 cd frontend
+
 npm install
+
 cp .env.example .env.local
+
 npm run dev
 ```
 
-Open **http://localhost:3000**
+Frontend runs on:
+
+```bash
+http://localhost:3000
+```
 
 ---
 
-## Project structure
+# 📂 Project Structure
 
-```
+```bash
 skillheat/
+├── backend/                # FastAPI backend
+│   ├── app/
+│   └── scripts/
+│
+├── frontend/               # Next.js frontend
+│   ├── components/
+│   ├── pages/
+│   └── lib/
+│
 ├── docker-compose.yml
-├── backend/        FastAPI + Postgres
-└── frontend/       Next.js + TypeScript
+└── README.md
 ```
 
 ---
 
-## Roadmap completed till now
+# ✅ Current Progress
 
-- [x] News aggregation pipeline
-- [x] 3D interactive globe
-- [x] Per-country news filtering
-- [x] Live polling
+- [x] Real-time news aggregation pipeline
+- [x] Interactive 3D globe visualization
+- [x] Country-based filtering system
+- [x] Live polling architecture
+- [x] Breaking news ticker
+- [x] Responsive dark UI
 
+### It will be deployed soon
 
 ---
 
-## License
+# 🧭 Planned Features
+
+- [ ] AI-powered trend summarization
+- [ ] Sentiment analysis by country
+- [ ] Historical tech heatmaps
+- [ ] Personalized tech-interest feeds
+- [ ] Startup and funding tracking
+- [ ] WebSocket-based ultra live updates
+
+---
+
+# 📸 Preview
+
+> “See the world of technology move in real time.”
+
+SkillHeat combines data visualization, real-time systems, and immersive UI into a single global dashboard experience.
+
+---
+
+# 📜 License
 
 All rights reserved.
 
+---
+
+# ⭐ Note
+SkillHeat started as an experiment in combining:
+
+- real-time systems
+- data aggregation
+- spatial visualization
+- interactive frontend engineering
 
