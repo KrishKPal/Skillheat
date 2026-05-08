@@ -2,6 +2,8 @@
 
 A real-time tech news dashboard with a 3D interactive globe. Click any country to see what's happening in tech there, with live news from 100+ sources updating every minute.
 
+Developer - Krish Kumar Pal
+
 ![Status](https://img.shields.io/badge/status-MVP-blue) ![Backend](https://img.shields.io/badge/backend-FastAPI-009688) ![Frontend](https://img.shields.io/badge/frontend-Next.js-black)
 
 ---
@@ -82,16 +84,13 @@ skillheat/
 
 ---
 
-## Roadmap
+## Roadmap completed till now
 
 - [x] News aggregation pipeline
 - [x] 3D interactive globe
 - [x] Per-country news filtering
 - [x] Live polling
-- [ ] Tech trend verdicts (rising / stable / declining)
-- [ ] Per-technology detail pages
-- [ ] Search and filtering
-- [ ] Public deployment
+
 
 ---
 
@@ -99,4 +98,4 @@ skillheat/
 
 All rights reserved.
 
----
+
