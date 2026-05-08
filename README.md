@@ -1,3 +1,4 @@
+
 # SkillHeat 🌍⚡
 
 **Track the global pulse of technology — in real time.**
@@ -6,6 +7,7 @@ SkillHeat is a live tech intelligence platform that maps breaking technology new
 
 Built by **Krish Kumar Pal**
 
+<img width="1470" height="801" alt="Screenshot 2026-05-09 at 12 22 22 AM" src="https://github.com/user-attachments/assets/8099b37e-a0c8-4373-856a-cc73bd1dd54d" />
 ---
 
 # 🚀 Features
