@@ -185,16 +185,6 @@ skillheat/
 
 ---
 
-# 🧭 Planned Features
-
-- [ ] AI-powered trend summarization
-- [ ] Sentiment analysis by country
-- [ ] Historical tech heatmaps
-- [ ] Personalized tech-interest feeds
-- [ ] Startup and funding tracking
-- [ ] WebSocket-based ultra live updates
-
----
 
 # 📸 Preview
 
