@@ -1,0 +1,1 @@
+"""SkillHeat backend application package."""

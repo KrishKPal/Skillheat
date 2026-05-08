@@ -1,0 +1,23 @@
+services:
+  postgres:
+    image: postgres:16-alpine
+    container_name: skillheat-postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: skillheat
+      POSTGRES_PASSWORD: skillheat_dev_pw
+      POSTGRES_DB: skillheat
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U skillheat -d skillheat"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
+volumes:
+  postgres_data:
+    name: skillheat_postgres_data
+
