@@ -201,12 +201,3 @@ SkillHeat combines data visualization, real-time systems, and immersive UI into 
 All rights reserved.
 
 ---
-
-# ⭐ Note
-SkillHeat started as an experiment in combining:
-
-- real-time systems
-- data aggregation
-- spatial visualization
-- interactive frontend engineering
-
