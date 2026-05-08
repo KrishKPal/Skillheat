@@ -36,7 +36,7 @@ A real-time tech news dashboard with a 3D interactive globe. Click any country t
 ### Setup
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/skillheat.git
+git clone https://github.com/KrishKPal/skillheat.git
 cd skillheat
 docker compose up -d
 ```
