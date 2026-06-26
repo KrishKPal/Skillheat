@@ -19,6 +19,10 @@ from app import models
 @asynccontextmanager
 async def lifespan(app: FastAPI):
     Base.metadata.create_all(bind=engine)
+
+    seed_countries()
+    seed_real_sources()
+
     yield
 
 
