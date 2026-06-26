@@ -13,15 +13,13 @@ from fastapi.middleware.cors import CORSMiddleware
 
 from app.config import settings
 from app.routes import globe, health, news
-
+from app.database import Base, engine
+from app import models
 
 @asynccontextmanager
 async def lifespan(app: FastAPI):
-    """Hook for startup/shutdown actions. We'll add the news fetcher here later."""
-    # Startup: nothing yet — DB schema is created by `init_db.py`, not on app boot.
-    # Adding it here would slow cold starts and complicate testing.
+    Base.metadata.create_all(bind=engine)
     yield
-    # Shutdown: nothing yet.
 
 
 app = FastAPI(
