@@ -13,7 +13,7 @@ from app.config import settings
 # `pool_pre_ping=True` checks connections are alive before handing them out.
 # Without it, you get cryptic errors when Postgres restarts mid-day in dev.
 engine = create_engine(
-    settings.database_url,
+    settings.sqlalchemy_url,
     pool_pre_ping=True,
     # echo=True is useful for debugging SQL queries during dev.
     # Leave off by default — it's noisy in logs.
